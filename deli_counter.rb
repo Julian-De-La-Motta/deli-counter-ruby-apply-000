@@ -15,12 +15,17 @@ end
 def take_a_number(customers, new_customer) 
 customers.push(new_customer)
 
-#line(customers)
-customer_queue = []
-customer_queue.push("#{(customers.index(new_customer) +1)}" + " " + new_customer) 
+#customer_queue = []
+#customer_queue.push("#{(customers.index(new_customer) +1)}" + " " + new_customer) 
 puts "Welcome, #{new_customer}. You are number #{(customers.index(new_customer) +1)} in line."
 #puts customer_queue[-1]
 end
+
+$number=0
+def take_a_number2(customers)
+
+
+$number+=1
 
 def now_serving(customers)
   if customers.length==0
