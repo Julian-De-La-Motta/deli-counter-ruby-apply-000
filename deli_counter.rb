@@ -24,9 +24,10 @@ end
 $number=0
 def take_a_number2(customers)
 
-puts "Welcome, You are number #{$number}"
-
 $number+=1
+puts "Welcome, You are number #{$number}"
+end
+
 
 def now_serving(customers)
   if customers.length==0
